@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply w-7 h-7 bg-black rounded-full p-1 flex justify-center items-center cursor-pointer;
+}
+

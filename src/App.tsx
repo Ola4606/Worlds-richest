@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Arrows from "./components/arrows";
+import Bio from "./components/bio";
+import ImgProfile from "./components/imgprofile";
+import NavigationBar from "./components/navigationBar";
 
 function App() {
+  //  async function getData () {
+
+  //   const res = await fetch('');
+  //   const data = await res.json();
+
+  //  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-full m-3 flex flex-col justify-between bg-slate-600">
+      <NavigationBar />
+
+      {/* main */}
+
+      <div
+        className="flex flex-col items-center lg:flex lg:flex-row lg:justify-center lg:items-center gap-3"
+      >
+        
+       
+        <ImgProfile />
+        <Bio />
+       
+        
+      </div>
+
+      <Arrows />
     </div>
   );
 }
