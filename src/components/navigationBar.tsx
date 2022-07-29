@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 
 function NavigationBar() {
   {
@@ -28,4 +28,4 @@ function NavigationBar() {
   );
 }
 
-export default NavigationBar;
+export default memo(NavigationBar);

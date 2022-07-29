@@ -1,15 +1,35 @@
-import React from "react";
+import React, {memo} from "react";
+import { BillionaireDataPropType } from "../types/billionaireDataPropType";
 
-function ImgProfile() {
+function ImgProfile({currentBillionaireData}: BillionaireDataPropType) {
+
+
+  const imageExists: boolean =  currentBillionaireData["person"]["imageExists"];
+  let imageUrl = "";
+
+  if(imageExists) {
+
+    imageUrl = currentBillionaireData["person"]["squareImage"];
+
+  } else{
+    imageUrl = "https://i.pinimg.com/564x/16/18/20/1618201e616f4a40928c403f222d7562.jpg"
+  }
+
   return (
+
+    
+
+
+
+
     <div className="w-[300px] x-sm:w-[350px] aspect-square lg:w-[420px] overflow-hidden rounded-lg">
       <img
-        src="https://images.unsplash.com/photo-1658932501338-c4e396dc76aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-        alt="Profile Image"
+        src={imageUrl}
+        alt="Profile"
         className="w-[100%] aspect-square object-cover"
       />
     </div>
   );
 }
 
-export default ImgProfile;
+export default memo(ImgProfile);

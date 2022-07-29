@@ -1,9 +1,18 @@
-import React from "react";
+import React, {memo} from "react";
 
-function Arrows() {
+
+
+type ArrowsPropType = {
+
+  handleClickNext: () => void,
+  handleClickBack: () => void,
+
+}
+
+function Arrows({handleClickNext, handleClickBack}: ArrowsPropType) {
   return (
-    <div className="flex justify-center gap-4">
-      <div className="btn w-7 h-7 rounded-full p-1 flex justify-center items-center">
+    <div className="flex justify-center gap-6">
+      <div className="btn w-7 h-7 rounded-full p-1 flex justify-center items-center mb-2" onClick={handleClickBack}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6 text-white"
@@ -20,7 +29,7 @@ function Arrows() {
         </svg>
       </div>
 
-      <div className="btn w-7 h-7 rounded-full p-1 flex justify-center items-center">
+      <div className="btn w-7 h-7 rounded-full p-1 flex justify-center items-center mb-2" onClick={handleClickNext}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6 text-white"
@@ -40,4 +49,4 @@ function Arrows() {
   );
 }
 
-export default Arrows;
+export default memo(Arrows);
