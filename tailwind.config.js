@@ -6,9 +6,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        header: "Abril Fatface",
-        casual: "Poppins"
-      }
+        title: "Abril Fatface",
+        header: "Space Mono",
+        casual: "Mulish"
+      },
+
+      screens: {
+        'x-sm': '425px',
+      },
     },
   },
   plugins: [],

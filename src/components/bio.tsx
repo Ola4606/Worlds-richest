@@ -1,18 +1,22 @@
-import React from 'react'
-import ReadMoreBtn from './readmorebtn'
+import React from "react";
+import ReadMoreBtn from "./readmorebtn";
 
 function Bio() {
   return (
-    <div className='w-[350px] text-center md:w-[420px] lg:w-[350px] lg:mx-0'>
-        <p className='text-xl font-bold font-mono'>Jeff Bezos</p>
-        <p className='text-xl font-bold font-mono'>Networth: 11Billion USD</p>
-        <p> cjnskcn ycn yxnckyn xcjykc nxbyksdjvn sdvni vjbdvuibvnsi udvbsdvi sdvb usibdvsi vdsidvb svbuib</p>
-
-        <ReadMoreBtn />
+    <div className="w-[300px] x-sm:w-[350px] text-center lg:w-[350px]">
+      <p className="text-3xl font-bold font-header">1. Jeff Bezos</p>
+      <p className="text-lg font-casual">Ceo of Amazon</p>
+      <div className="block">
+        <span className="text-xl font-bold font-casual">Networth: </span>
+        <span className="text-xl font-casual">$11 Billion</span>
+      </div>
+      <div className="block mb-4 lg:mb-6">
+        <span className="text-lg font-bold font-casual">Industry: </span>
+        <span className="text-lg font-casual">Technology</span>
+      </div>
+      <ReadMoreBtn />
     </div>
-
-    
-  )
+  );
 }
 
-export default Bio
+export default Bio;

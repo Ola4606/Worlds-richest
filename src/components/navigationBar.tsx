@@ -5,23 +5,23 @@ function NavigationBar() {
     /* navigation bar */
   }
   return (
-    <div className="bg-black py-2 px-2 md:py-4 md:px-3 rounded-md">
-      <nav className="flex justify-between items-center">
-        <h1 className="font-header text-xl md:text-2xl text-white">
-          World Richest
+    <div className="bg-black py-1 px-1 sm:py-2 sm:px-2 md:py-4 md:px-3 rounded-md">
+      <nav className="flex flex-col items-center x-sm:flex x-sm:flex-row x-sm:justify-between x-sm:items-center">
+        <h1 className="font-title text-base x-sm:text-lg sm:text-xl md:text-2xl text-white">
+          World's Richest (Top 100)
         </h1>
 
-        <div className="flex">
-          <p className="text-xs md:text-sm text-white font-casual font-light">
-            Made by:
-          </p>
-          <a
-            href="https://twitter.com/4real_Dev"
-            target="blank"
-            className="text-xs md:text-sm text-blue-300 ml-1 md:ml-2 font-casual font-light"
-          >
-            Adeyemo OlaOluwa
-          </a>
+        <div className="text-xs md:text-sm font-casual font-light">
+          <span className="text-white">
+            Made by:{" "}
+            <a
+              href="https://twitter.com/4real_Dev"
+              target="blank"
+              className="text-blue-300"
+            >
+              Adeyemo OlaOluwa
+            </a>
+          </span>
         </div>
       </nav>
     </div>

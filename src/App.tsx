@@ -13,7 +13,7 @@ function App() {
   //  }
 
   return (
-    <div className="min-h-full m-3 flex flex-col justify-between bg-slate-600">
+    <div className="min-h-[100vh] max-h-[100vh] p-3 flex flex-col justify-between">
       <NavigationBar />
 
       {/* main */}
