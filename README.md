@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# World's Richest
+## Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Live URL:** [View World's Richest Live](https://worlds-richest.netlify.app/)
 
-## Available Scripts
+![World's Richest Home Page](https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Worlds%20Richest%2F1.png?alt=media "World's Richest Home Page")
 
-In the project directory, you can run:
+World's Richest was my first React project, and it was built using React and TailwindCSS. It consumes live data from this API:
 
-### `npm start`
+[API Link](https://forbes400.herokuapp.com/api/forbes400/real-time)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+which provides data on the world's richest individuals in real-time. Although, this website only shows data on the top 100 richest people.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+It allows users to view the following data on the world's top 100 richest people: Rank, Full Name, Net worth _(in US dollars)_, Source of wealth, Residence, and Bio _(a brief background)_.
 
-### `npm test`
+As I said earlier, this was my first React project, but I did not want to create the same old e-commerce website or weather website that most Junior React developers were making, so I created this.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+While creating this website I wanted to incorporate the data available on the Forbes website into an easy-to-use and simple website, so people could get the data they needed straight out of the website without all the other distractions.
 
-### `npm run build`
+![World's Richest Home Page](https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Worlds%20Richest%2F2.png?alt=media "World's Richest Home Page")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Using TailwindCSS breakpoints, I was able to make it fully responsive for mobile, tablet, and laptop screens.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+While building this website, I was able to improve my skills on some React principles and concepts, such as:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*   Using React Hooks _(namely useState, and useEffect)_
+*   Using React Memo
+*   Passing and receiving props
+*   Using SVGs in React, etc.
 
-### `npm run eject`
+I also learned new principles, which included the use of the Axios NPM package for making HTTP requests; and using Asynchronous functions.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Key NPM Packages used:**  Axios
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Read on more of my projects over on my website:** [Adeyemo OlaOluwa](https://laolu.netlify.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
