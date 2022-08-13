@@ -15,7 +15,7 @@ function NavigationBar() {
           <span className="text-white">
             Made by:{" "}
             <a
-              href="https://twitter.com/4real_Dev"
+              href="https://laolu.netlify.app/"
               target="blank"
               className="text-blue-300"
             >
