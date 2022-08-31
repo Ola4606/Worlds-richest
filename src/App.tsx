@@ -24,15 +24,11 @@ function App() {
       if (data !== null) {
         // setAllBillionaireData(data);
         allBillionaireData = data;
-        console.log(allBillionaireData);
-        // console.log('done1');
-        // console.log(data);
+       
         setCurrentBillionaireData(data[currentCount]);
-        // console.log('done2');
-        // console.log(allBillionaireData);
+       
         setLoadingPageState(1);
-        // console.log('done3');
-        // console.log(loadingPageState);
+       
       } else {
         setLoadingPageState(2);
       }
@@ -65,8 +61,7 @@ function App() {
     }
   }
 
-  console.log("a");
-  console.log(currentCount);
+  
 
   return loadingPageState !== 1 ? (
     <div className="min-h-[100vh] min-w-[100vw] p-3 flex flex-col justify-between">
